@@ -1,7 +1,6 @@
 //localStorage = ['key1' => 'car' , 'key2' => 'far'  ]
 //Index od keys    0                  1
-// localStorage.getItem('');
-// localStorage.getItem(0);
+// localStorage.getItem('key1');  ==  localStorage.getItem(0);
 // localStorage.key(0);
 
 // localStorage.setItem('', '');

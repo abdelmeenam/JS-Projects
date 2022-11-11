@@ -5,7 +5,6 @@ const ul = document.querySelector('ul');
 const ClearButton = document.querySelector('button');
 const Items = JSON.parse(localStorage.getItem('Tasks')) ? JSON.parse(localStorage.getItem('Tasks')) : [];
 
-
 //Create li and append to ul
 const createItem = (text) => {
     const li = document.createElement('li');
@@ -16,10 +15,10 @@ const createItem = (text) => {
 
 // Submit form Event
 form.addEventListener('submit', function (e) {
-    //to prevent from refreshing
+    // to prevent from refreshing
     e.preventDefault();
 
-    //Add to localstorage
+    // Add to localstorage
     Items.push(input.value);
     localStorage.setItem('Tasks', JSON.stringify(Items));
     createItem(input.value);

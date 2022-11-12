@@ -18,7 +18,7 @@ form.addEventListener('submit', function (e) {
     // to prevent from refreshing
     e.preventDefault();
 
-    // Add to localstorage
+    // Add data to localstorage
     Items.push(input.value);
     localStorage.setItem('Tasks', JSON.stringify(Items));
     createItem(input.value);
